@@ -5,17 +5,16 @@
     <title>Luigi Sabetta - AI Researcher & Physicist</title>
     <style>
         body, html { margin: 0; padding: 0; font-family: Arial, sans-serif; background-color: black; color: white; }
-        .cover-image { background: url('https://raw.githubusercontent.com/Lsabetta/lsabetta.github.io/main/marmolada.jpeg') no-repeat center center; background-size: cover; height: 100vh; display: flex; justify-content: center; align-items: center; }
+        .cover-image { background: url('https://raw.githubusercontent.com/Lsabetta/lsabetta.github.io/main/marmolada.jpeg') no-repeat center center; background-size: cover; width: 100%; height: 100vh; }
         .content { padding: 20px; }
-        h1 { margin: 0; font-size: 2.5rem; }
-        h2 { text-align: center; margin-top: 20px; }
+        h1 { font-size: 2.5rem; text-align: center; margin-top: -20px; }
+        h2 { margin-top: 20px; }
         p { margin: 20px 0; }
     </style>
 </head>
 <body>
-    <div class="cover-image">
-        <h1>Luigi Sabetta</h1>
-    </div>
+    <div class="cover-image"></div>
+    <h1>Luigi Sabetta</h1>
     <div class="content">
         <h2>About Me</h2>
         <p>Transitioned from a particle physicist to an AI researcher, focusing on innovative solutions in computer vision and machine learning. Currently exploring the frontiers of AI at Leonardo Labs.</p>
