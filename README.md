@@ -4,28 +4,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Luigi Sabetta - AI Researcher & Physicist</title>
     <style>
-        body, html { margin: 0; padding: 0; font-family: Arial, sans-serif; background-color: black; color: white; }
-        .cover-image { background: url('https://raw.githubusercontent.com/Lsabetta/lsabetta.github.io/main/marmolada.jpeg') no-repeat center center; background-size: cover; width: 100%; height: 100vh; }
-        .content { padding: 20px; }
-        h1 { font-size: 2.5rem; text-align: center; margin-top: -20px; }
-        h2 { margin-top: 20px; }
-        p { margin: 20px 0; }
+        body, html { margin: 0; padding: 0; width: 100%; height: 100%; }
+        .cover-image { 
+            background: url('https://raw.githubusercontent.com/Lsabetta/lsabetta.github.io/main/marmolada.jpeg') no-repeat center center fixed; 
+            background-size: cover; 
+            width: 100%; 
+            height: 100vh; 
+        }
+        .content { padding: 20px; color: white; background-color: black; }
+        h1 { font-size: 2rem; text-align: center; margin-top: 20px; }
+        h2, p { margin: 20px 0; }
     </style>
 </head>
 <body>
     <div class="cover-image"></div>
-    <h1>Luigi Sabetta</h1>
     <div class="content">
+        <h1>Luigi Sabetta</h1>
         <h2>About Me</h2>
-        <p>Transitioned from a particle physicist to an AI researcher, focusing on innovative solutions in computer vision and machine learning. Currently exploring the frontiers of AI at Leonardo Labs.</p>
+        <p>From particle physics to AI research, focusing on computer vision and machine learning. Currently at Leonardo Labs.</p>
         <h2>Skills</h2>
-        <p>Expert in Programming & Scripting, Machine Learning, Monte Carlo Simulation, and more. Skilled in Python, C++, and various AI frameworks.</p>
+        <!-- Add your skills -->
         <h2>Experience</h2>
-        <p>Significant contributions in AI research and physics, including research at CERN and projects in continual learning for computer vision at Leonardo Labs.</p>
+        <!-- Add your experience -->
         <h2>Education</h2>
-        <p>Ph.D. in Physics from Sapienza University of Rome, with extensive research and publications in the field.</p>
+        <!-- Add your education -->
         <h2>Contact</h2>
-        <p>For inquiries or collaborations, reach out through email or connect with me on professional networks.</p>
+        <!-- Add your contact info -->
     </div>
 </body>
 </html>
