@@ -1,14 +1,14 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Luigi Sabetta - AI Researcher & Physicist</title>
     <style>
-        body { font-family: Arial, sans-serif; background-color: black; color: white; }
-        .cover-image { background: url('https://raw.githubusercontent.com/Lsabetta/lsabetta.github.io/main/marmolada.jpeg') no-repeat center center; background-size: cover; height: 300px; display: flex; justify-content: center; align-items: center; }
+        body, html { margin: 0; padding: 0; font-family: Arial, sans-serif; background-color: black; color: white; }
+        .cover-image { background: url('https://raw.githubusercontent.com/Lsabetta/lsabetta.github.io/main/marmolada.jpeg') no-repeat center center; background-size: cover; height: 100vh; display: flex; justify-content: center; align-items: center; }
         .content { padding: 20px; }
-        h1, h2 { text-align: center; }
+        h1 { margin: 0; font-size: 2.5rem; }
+        h2 { text-align: center; margin-top: 20px; }
         p { margin: 20px 0; }
     </style>
 </head>
