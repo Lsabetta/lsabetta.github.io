@@ -20,14 +20,43 @@
         </nav>
     </header>
     <main>
-        <section id="about">
-            <h2>About Me</h2>
-            <p>
-                Here you'll provide information about yourself. Include your background,
-                interests, and what you are currently working on. It's also a good place to
-                share your motivations and what drives you in your professional field.
-            </p>
-        </section>
+      <section id="publications">
+	<h2>Selected Publications</h2>
+	<div class="publications-container">
+          <article class="publication">
+            <h3>DUCK: Distance-based Unlearning via Centroid Kinematics</h3>
+            <p class="pub-details">Under review - December 2023</p>
+            <a href="#" target="_blank" rel="noopener noreferrer">Paper link</a>
+          </article>
+          <article class="publication">
+            <h3>MIND: Multi-Task Incremental Network Distillation</h3>
+            <p class="pub-details">AAAI Conference on Artificial Intelligence - December 2023</p>
+            <a href="#" target="_blank" rel="noopener noreferrer">Paper link</a>
+          </article>
+          <article class="publication">
+            <h3>Observation of electroweak production of two jets in association with an isolated photon and missing transverse momentum and search for a Higgs boson decaying into invisible particles at 13 TeV with the ATLAS detector</h3>
+            <p class="pub-details">The European Physical Journal C - February 2022</p>
+            <a href="#" target="_blank" rel="noopener noreferrer">Paper link</a>
+          </article>
+          <article class="publication">
+            <h3>Model compression and simplification pipelines for fast deep neural network inference in FPGAs in HEP</h3>
+            <p class="pub-details">The European Physical Journal C - November 2021</p>
+            <a href="#" target="_blank" rel="noopener noreferrer">Paper link</a>
+          </article>
+	</div>
+      </section>
+      
     </main>
+  <footer>
+    <div id="footer-placeholder"></div>
+    
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+          fetch('footer.html')
+	      .then(response => response.text())
+	      .then(text => document.getElementById('footer-placeholder').innerHTML = text);
+      });
+    </script>  
+  </footer>
 </body>
 </html>
