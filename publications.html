@@ -23,40 +23,56 @@
       <section id="publications">
 	<h2>Selected Publications</h2>
 	<div class="publications-container">
-          <article class="publication">
+	  <!-- Publication 1 -->
+	  
+	  <div class="publication">
             <h3>DUCK: Distance-based Unlearning via Centroid Kinematics</h3>
             <p class="pub-details">Under review - December 2023</p>
-            <a href="#" target="_blank" rel="noopener noreferrer">Paper link</a>
-          </article>
-          <article class="publication">
+            <div class="pub-actions">
+              <a href="https://arxiv.org/abs/2312.02052" class="paper-link" target="_blank" rel="noopener noreferrer">Paper link</a>
+            </div>
+	  </div>
+	  
+	  <!-- Publication 2 -->
+	  <div class="publication">
             <h3>MIND: Multi-Task Incremental Network Distillation</h3>
             <p class="pub-details">AAAI Conference on Artificial Intelligence - December 2023</p>
-            <a href="#" target="_blank" rel="noopener noreferrer">Paper link</a>
-          </article>
-          <article class="publication">
+            <div class="pub-actions">
+              <a href="https://arxiv.org/abs/2312.02916" class="paper-link" target="_blank" rel="noopener noreferrer">Paper link</a>
+            </div>
+	  </div>
+	  
+	  <!-- Publication 3 -->
+	  <div class="publication">
             <h3>Observation of electroweak production of two jets in association with an isolated photon and missing transverse momentum and search for a Higgs boson decaying into invisible particles at 13 TeV with the ATLAS detector</h3>
             <p class="pub-details">The European Physical Journal C - February 2022</p>
-            <a href="#" target="_blank" rel="noopener noreferrer">Paper link</a>
-          </article>
-          <article class="publication">
+            <div class="pub-actions">
+              <a href="https://link.springer.com/article/10.1140/epjc/s10052-021-09878-z" class="paper-link" target="_blank" rel="noopener noreferrer">Paper link</a>
+            </div>
+	  </div>
+	  
+	  <!-- Publication 4 -->
+	  <div class="publication">
             <h3>Model compression and simplification pipelines for fast deep neural network inference in FPGAs in HEP</h3>
             <p class="pub-details">The European Physical Journal C - November 2021</p>
-            <a href="#" target="_blank" rel="noopener noreferrer">Paper link</a>
-          </article>
+            <div class="pub-actions">
+              <a href="https://link.springer.com/article/10.1140/epjc/s10052-021-09770-w" class="paper-link" target="_blank" rel="noopener noreferrer">Paper link</a>
+            </div>
+	  </div>
 	</div>
       </section>
       
     </main>
-  <footer>
-    <div id="footer-placeholder"></div>
-    
-    <script>
-      document.addEventListener("DOMContentLoaded", function() {
-          fetch('footer.html')
-	      .then(response => response.text())
-	      .then(text => document.getElementById('footer-placeholder').innerHTML = text);
-      });
-    </script>  
-  </footer>
+    <footer>
+      <div id="footer-placeholder"></div>
+      
+      <script>
+	document.addEventListener("DOMContentLoaded", function() {
+            fetch('footer.html')
+		.then(response => response.text())
+		.then(text => document.getElementById('footer-placeholder').innerHTML = text);
+	});
+      </script>  
+    </footer>
 </body>
 </html>
