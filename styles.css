@@ -11,10 +11,10 @@ body {
     width: 100%;
     color: white;
     font-family: 'Arial', sans-serif;
-    background-image: url('./images/banner2.jpg');
+    background-image: url('./images/banner3.jpeg');
     background-repeat: no-repeat;
-    background-position: calc(50% - 36px) center; /* Adjust the px value as needed to shift */
-    background-size: 110%;
+    background-position: center center; /* Adjust the px value as needed to shift */
+    background-size: cover;
     background-attachment: fixed;
     position: relative; /* This should remain to retain the background and overlay effect */
 }
