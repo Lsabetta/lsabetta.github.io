@@ -11,7 +11,7 @@ body {
     width: 100%;
     color: white;
     font-family: 'Arial', sans-serif;
-    background-image: url('./images/banner3.jpeg');
+    background-image: url('./images/banner3.jpg');
     background-repeat: no-repeat;
     background-position: center center; /* Adjust the px value as needed to shift */
     background-size: cover;
@@ -135,4 +135,56 @@ header nav ul li a {
 
 .paper-link:hover {
     background-color: #0056b3;
+}
+
+#education {
+    text-align: center;
+    position: relative;
+    padding: 40px 20px;
+}
+
+.timeline {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.timeline-item h3, .timeline-item p {
+    display: inline-block;
+    text-align: left;
+    vertical-align: top;
+}
+
+.timeline-item .line {
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background-color: #555;
+    top: 15px;
+}
+
+.timeline-item.left .line {
+    right: calc(50% + 1px);
+}
+
+.timeline-item.right .line {
+    left: calc(50% + 1px);
+}
+
+/* Central Line */
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    background-color: #555;
+    height: 100%;
+    left: 50%;
+    top: 0;
 }

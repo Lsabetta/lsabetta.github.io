@@ -20,25 +20,43 @@
         </nav>
     </header>
     <main>
-        <section id="about">
-            <h2>About Me</h2>
-            <p>
-                Here you'll provide information about yourself. Include your background,
-                interests, and what you are currently working on. It's also a good place to
-                share your motivations and what drives you in your professional field.
-            </p>
-        </section>
+<section id="education">
+    <h2>Education Timeline</h2>
+    <div class="timeline">
+        <!-- Timeline Entry 1 (Right) -->
+        <div class="timeline-item right">
+            <h3>Ph.D. in Artificial Intelligence</h3>
+            <p>Massachusetts Institute of Technology (MIT) - 2023</p>
+            <span class="line"></span>
+        </div>
+        
+        <!-- Timeline Entry 2 (Left) -->
+        <div class="timeline-item left">
+            <h3>M.Sc. in Particle Physics</h3>
+            <p>University of Cambridge - 2018</p>
+            <span class="line"></span>
+        </div>
+        
+        <!-- Timeline Entry 3 (Right) -->
+        <div class="timeline-item right">
+            <h3>B.Sc. in Physics</h3>
+            <p>University of Rome La Sapienza - 2015</p>
+            <span class="line"></span>
+        </div>
+    </div>
+</section>
+      
     </main>
-  <footer>
-    <div id="footer-placeholder"></div>
-    
-    <script>
-      document.addEventListener("DOMContentLoaded", function() {
-          fetch('footer.html')
-	      .then(response => response.text())
-	      .then(text => document.getElementById('footer-placeholder').innerHTML = text);
-      });
-    </script>  
-  </footer>
+    <footer>
+      <div id="footer-placeholder"></div>
+      
+      <script>
+	document.addEventListener("DOMContentLoaded", function() {
+            fetch('footer.html')
+		.then(response => response.text())
+		.then(text => document.getElementById('footer-placeholder').innerHTML = text);
+	});
+      </script>  
+    </footer>
 </body>
 </html>
