@@ -38,7 +38,7 @@ main {
 
 footer {
     z-index: 1; /* Ensure the footer is also above the overlay */
-    position: relative;
+    /*position: relative;*/
     margin-top: auto;
 }
 
@@ -84,6 +84,8 @@ header nav ul li a {
 .contact a:hover {
     color: #0b5ed7;
 }
+
+
 #publications {
     padding: 20px;
     background-color: transparent; /*#f9f9f9;*/
