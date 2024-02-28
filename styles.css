@@ -39,6 +39,7 @@ main {
 footer {
     z-index: 1; /* Ensure the footer is also above the overlay */
     position: relative;
+    margin-top: auto;
 }
 
 header nav ul {
@@ -187,7 +188,7 @@ header nav ul li a {
 .timeline-entry .timeline-content::before {
     content: '';
     position: absolute;
-    width: calc(13% + 0px);
+    width: 13%;
     height: 2px;
     background-color: #ddd; /* Light accent color */
     top: 50%;
@@ -213,11 +214,11 @@ right-entry:hover .timeline-content::before {
 
 }
 .left-entry .timeline-content::before {
-    right: -11%; /* For left entries, extend line from right */
+    right: -10%; /* For left entries, extend line from right */
 }
 
 .right-entry .timeline-content::before {
-    left: -11%; /* For right entries, extend line from left */
+    left: -10%; /* For right entries, extend line from left */
 }
 /*.right-entry .timeline-content::before {
     left: 100%;
