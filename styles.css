@@ -11,7 +11,7 @@ body {
     width: 100%;
     color: white;
     font-family: 'Arial', sans-serif;
-    background-image: url('./images/banner3.jpg');
+    background-image: url('./images/banner4.jpg');
     background-repeat: no-repeat;
     background-position: center center; /* Adjust the px value as needed to shift */
     background-size: cover;
@@ -137,54 +137,155 @@ header nav ul li a {
     background-color: #0056b3;
 }
 
-#education {
-    text-align: center;
-    position: relative;
-    padding: 40px 20px;
-}
 
 .timeline {
     position: relative;
-    max-width: 600px;
+    max-width: 960px;
     margin: 0 auto;
 }
 
-.timeline-item {
+.timeline-container {
     position: relative;
-    margin-bottom: 20px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding: 20px 0;
 }
 
-.timeline-item h3, .timeline-item p {
-    display: inline-block;
-    text-align: left;
-    vertical-align: top;
-}
-
-.timeline-item .line {
-    position: absolute;
-    width: 30px;
-    height: 2px;
-    background-color: #555;
-    top: 15px;
-}
-
-.timeline-item.left .line {
-    right: calc(50% + 1px);
-}
-
-.timeline-item.right .line {
-    left: calc(50% + 1px);
-}
-
-/* Central Line */
-.timeline::after {
+.timeline-container::after {
     content: '';
     position: absolute;
     width: 2px;
-    background-color: #555;
-    height: 100%;
-    left: 50%;
+    background-color: #ddd; /* Light accent color */
     top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.timeline-entry {
+    position: relative;
+    width: 50%;
+    padding: 10px 40px;
+    box-sizing: border-box;
+}
+
+.left-entry {
+    left: 0;
+}
+
+.right-entry {
+    left: 50%;
+}
+
+.timeline-entry .timeline-content {
+    position: relative;
+    padding: 20px;
+    color: #f0f0f0; /* Light font color for dark background */
+}
+.right-entry .timeline-content {
+    text-align: left;
+}
+
+.timeline-entry .timeline-content::before {
+    content: '';
+    position: absolute;
+    width: calc(13% + 0px);
+    height: 2px;
+    background-color: #ddd; /* Light accent color */
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+/* Circular marker */
+.timeline-entry:hover .timeline-content::before {
+    /*background-color: transparent;  Hide the line behind the circle */
+    border: 2px solid #ddd; /* Border color for the circle, can use accent color */
+    width: 10px; /* Diameter of the circle */
+    height: 10px; /* Diameter of the circle */
+    border-radius: 50%; /* Makes the shape a circle */
+    top: calc(50% - 5px); /* Centers the circle vertically */
+    z-index: 2;
+}
+left-entry:hover .timeline-content::before {
+    right: -15% ; /* Centers the circle on the timeline */
+
+}
+right-entry:hover .timeline-content::before {
+    left: -15% ; /* Centers the circle on the timeline */
+
+}
+.left-entry .timeline-content::before {
+    right: -11%; /* For left entries, extend line from right */
+}
+
+.right-entry .timeline-content::before {
+    left: -11%; /* For right entries, extend line from left */
+}
+/*.right-entry .timeline-content::before {
+    left: 100%;
+    right: auto;
+}*/
+
+.timeline-entry .timeline-content h3,
+.timeline-entry .timeline-content p {
+    margin: 0;
+    transition: all 0.3s ease;
+}
+
+.timeline-entry .timeline-content:hover {
+    transform: translateX(-10px);
+}
+
+.right-entry .timeline-content:hover {
+    transform: translateX(10px);
+}
+
+@media screen and (max-width: 600px) {
+    .timeline-entry,
+    .left-entry,
+    .right-entry {
+        width: 100%;
+        left: 0;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .right-entry .timeline-content::before,
+    .left-entry .timeline-content::before {
+        display: none;
+    }
+
+    .timeline-entry .timeline-content:hover {
+        transform: none;
+    }
+}
+.experience .timeline-content ul {
+    padding-left: 20px; /* Adjust based on design */
+    list-style-type: circle; /* Or choose another style */
+    color: #f0f0f0; /* Light font color for dark background */
+}
+
+.experience .timeline-content li {
+    margin-bottom: 10px; /* Space between bullet points */
+}
+
+.experience .timeline-entry {
+    position: relative;
+    width: 50%; /* Increase from 50% to 60% for more space */
+    padding: 10px 40px; /* Adjust padding as needed */
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 600px) {
+    .experience .timeline-entry,
+    .experience .left-entry,
+    .experience .right-entry {
+        width: 100%; /* Full width on smaller screens */
+        left: 0;
+        padding: 10px 20px; /* Adjust padding for smaller screens */
+    }
+
+    .experience .left-entry .timeline-content::before,
+    .experience .right-entry .timeline-content::before {
+        /* Optionally hide the horizontal connectors on smaller screens */
+        display: none;
+    }
 }
