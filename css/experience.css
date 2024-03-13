@@ -1,0 +1,33 @@
+
+.experience .timeline-content ul {
+    padding-left: 20px; /* Adjust based on design */
+    list-style-type: circle; /* Or choose another style */
+    color: #f0f0f0; /* Light font color for dark background */
+}
+
+.experience .timeline-content li {
+    margin-bottom: 10px; /* Space between bullet points */
+}
+
+.experience .timeline-entry {
+    position: relative;
+    width: 50%; /* Increase from 50% to 60% for more space */
+    padding: 10px 40px; /* Adjust padding as needed */
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 600px) {
+    .experience .timeline-entry,
+    .experience .left-entry,
+    .experience .right-entry {
+        width: 100%; /* Full width on smaller screens */
+        left: 0;
+        padding: 10px 20px; /* Adjust padding for smaller screens */
+    }
+
+    .experience .left-entry .timeline-content::before,
+    .experience .right-entry .timeline-content::before {
+        /* Optionally hide the horizontal connectors on smaller screens */
+        display: none;
+    }
+}

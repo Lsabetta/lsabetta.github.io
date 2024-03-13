@@ -1,0 +1,22 @@
+footer {
+    z-index: 1; /* Ensure the footer is also above the overlay */
+    /*position: relative;*/
+    margin-top: auto;
+}
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 20px;
+    position: center;
+}
+.contact a {
+    color: #ffffff;
+    font-size: 40px;
+    text-decoration: none;
+}
+.contact a:hover {
+    color: #0b5ed7;
+}
+

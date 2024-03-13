@@ -1,0 +1,94 @@
+html {
+    height: 100%; /* Ensure the html element takes up the full height */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Use viewport height to ensure footer can stick to the bottom */
+    margin: 0; /* Reset default margin */
+    padding: 0;
+    width: 100%;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    background-image: url('../images/banner4.jpg');
+    background-repeat: no-repeat;
+    background-position: center center; /* Adjust the px value as needed to shift */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative; /* This should remain to retain the background and overlay effect */
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.75);
+    z-index: -1; /* Ensure this doesn't interfere with content visibility */
+}
+
+main {
+    flex-grow: 1; /* Allows the main content to grow and push the footer down */
+    position: relative; /* Ensures content on main is above the overlay */
+    z-index: 1;
+}
+
+
+header nav ul {
+    list-style-type: none;
+    text-align: center;
+    padding: 20px;
+}
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+.intro-container {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+.profile-pic {
+    margin-right: 20px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+#index h1 {
+    text-align: center;
+    font-size: 50px; /* Increase the font size for emphasis */
+    margin-top: 20px; /* Add top margin */
+    font-weight: bold; /* Change to 'bold' if you prefer, or keep 'normal' */
+    text-transform: uppercase; /* Makes the text uppercase for more impact */
+    letter-spacing: 1.5px; /* Adds spacing between letters */
+}
+
+#about h2 {
+    color: #007bff; /* Change this to your preferred color */
+    text-align: center;
+    font-size: 32px; /* Increase the font size for emphasis */
+    margin-top: 20px; /* Add top margin */
+    margin-bottom: 30px; /* Add bottom margin */
+    font-weight: bold; /* Change to 'bold' if you prefer, or keep 'normal' */
+    text-transform: uppercase; /* Makes the text uppercase for more impact */
+    letter-spacing: 1.5px; /* Adds spacing between letters */
+}
+
+#about p {
+    font-size: 18px; /* Adjust font size for readability */
+    line-height: 1.6; /* Adjust line height for better readability */
+    /*color: #333;  Change this to your preferred text color */
+    margin-bottom: 20px; /* Adds bottom margin between paragraphs */
+    text-align: justify; /* Adjusts the text alignment */
+    padding: 10px  15px; /* Adds padding on the sides for narrower text blocks */
+}

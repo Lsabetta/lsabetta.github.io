@@ -1,0 +1,53 @@
+#publications {
+    padding: 20px;
+    background-color: transparent; /*#f9f9f9;*/
+}
+
+.publications-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.publication {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distributes space evenly */
+    padding: 15px;
+    border-radius: 10px;
+    background-color: black;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    overflow: hidden; /* In case of very long titles */
+}
+
+.publication h3 {
+    font-size: 20px;
+    margin: 0 0 10px 0; /* Add space below the title */
+}
+
+.publication-info {
+    margin-top: auto; /* Pushes the info to the bottom */
+    display: grid;
+    grid-template-columns: 1fr auto; /* Allocates space for details and button */
+    align-items: end; /* Aligns items to the bottom */
+}
+
+.pub-details {
+    font-style: italic;
+    color: #666666;
+    margin: 0; /* Remove any default margin */
+}
+
+.paper-link {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-left: 10px; /* Adds space between details and button */
+}
+
+.paper-link:hover {
+    background-color: #0056b3;
+}
