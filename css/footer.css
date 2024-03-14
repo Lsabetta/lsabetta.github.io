@@ -1,22 +1,40 @@
+
 footer {
     z-index: 1; /* Ensure the footer is also above the overlay */
-    /*position: relative;*/
     margin-top: auto;
+    padding: 10px 0; /* Reduce top and bottom padding */
 }
+
 .contact {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 40px;
-    padding: 20px;
-    position: center;
+    gap: 20px; /* Reduce gap for smaller screens */
+    padding: 10px 5px; /* Adjusted padding */
 }
+
 .contact a {
     color: #ffffff;
-    font-size: 40px;
+    font-size: 30px; /* Reduce size for smaller screens if necessary */
     text-decoration: none;
 }
+
 .contact a:hover {
     color: #0b5ed7;
 }
 
+/* Media Query for Mobile Devices */
+@media screen and (max-width: 600px) {
+    .contact {
+        gap: 10px; /* Even smaller gap for very small screens */
+        padding: 10px 2px; /* Reduce padding for small screens */
+    }
+
+    .contact a {
+        font-size: 24px; /* Further reduce the size for mobile if necessary */
+    }
+
+    footer {
+        padding: 8px 0; /* Less padding on mobile to save space */
+    }
+}

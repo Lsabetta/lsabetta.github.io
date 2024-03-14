@@ -33,15 +33,17 @@
 
 .right-entry {
     left: 50%;
+    
 }
 
 .timeline-entry .timeline-content {
     position: relative;
-    padding: 20px;
+    padding: 30px;
     color: #f0f0f0; /* Light font color for dark background */
 }
 .right-entry .timeline-content {
     text-align: left;
+    padding: 50px;
 }
 
 .timeline-entry .timeline-content::before {

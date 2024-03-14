@@ -41,6 +41,7 @@ header nav ul {
     list-style-type: none;
     text-align: center;
     padding: 20px;
+
 }
 header nav ul li {
     display: inline;
@@ -50,11 +51,12 @@ header nav ul li a {
     text-decoration: none;
     color: white;
     font-weight: bold;
+    font-size: 23px; 
 }
 .intro-container {
     display: flex;
     align-items: center;
-    padding: 20px;
+    padding: 30px 20px;
 }
 .profile-pic {
     margin-right: 20px;
@@ -90,5 +92,5 @@ header nav ul li a {
     /*color: #333;  Change this to your preferred text color */
     margin-bottom: 20px; /* Adds bottom margin between paragraphs */
     text-align: justify; /* Adjusts the text alignment */
-    padding: 10px  15px; /* Adds padding on the sides for narrower text blocks */
+    padding: 10px  40px; /* Adds padding on the sides for narrower text blocks */
 }
