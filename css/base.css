@@ -6,9 +6,9 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh; /* Use viewport height to ensure footer can stick to the bottom */
-    margin: 0; /* Reset default margin */
+    margin: 0 10vmax; /* Reset default margin */
     padding: 0;
-    width: 100%;
+    width: 80%;
     color: white;
     font-family: 'Arial', sans-serif;
     background-image: url('../images/banner4.jpg');
@@ -31,7 +31,7 @@ body::before {
 }
 
 main {
-    flex: 1;  /*Allows the main content to grow and push the footer down */
+    /*flex: 1;  Allows the main content to grow and push the footer down */
     position: relative; /* Ensures content on main is above the overlay */
     z-index: 1;
     margin-bottom: 60px; /* Adjust based on the height of your footer */
@@ -53,7 +53,7 @@ header nav ul li a {
     text-decoration: none;
     color: white;
     font-weight: bold;
-    font-size: 23px; 
+    font-size: 20px; 
 }
 .intro-container {
     display: flex;
@@ -61,7 +61,7 @@ header nav ul li a {
     padding: 30px 20px;
 }
 .profile-pic {
-    margin-right: 20px;
+    margin-right: 0 10px;
     width: 150px;
     height: 150px;
     border-radius: 50%;
@@ -76,9 +76,17 @@ header nav ul li a {
     text-transform: uppercase; /* Makes the text uppercase for more impact */
     letter-spacing: 1.5px; /* Adds spacing between letters */
 }
-
+#profile h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 30px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
 #about h2 {
-    color: #007bff; /* Change this to your preferred color */
+    color: #5F84A2; /* Change this to your preferred color */
     text-align: center;
     font-size: 32px; /* Increase the font size for emphasis */
     margin-top: 20px; /* Add top margin */
@@ -94,5 +102,5 @@ header nav ul li a {
     /*color: #333;  Change this to your preferred text color */
     margin-bottom: 20px; /* Adds bottom margin between paragraphs */
     text-align: justify; /* Adjusts the text alignment */
-    padding: 10px  40px; /* Adds padding on the sides for narrower text blocks */
+    padding: 10px  30px; /* Adds padding on the sides for narrower text blocks */
 }

@@ -19,10 +19,10 @@ footer {
 
 .contact a {
     color: #ffffff;
-    font-size: 40px; /* Adjust font size as needed */
+    font-size: 33px; /* Adjust font size as needed */
     text-decoration: none;
 }
 
 .contact a:hover {
-    color: #0b5ed7;
+    color: #5F84A2;
 }
