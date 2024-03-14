@@ -31,9 +31,11 @@ body::before {
 }
 
 main {
-    flex-grow: 1; /* Allows the main content to grow and push the footer down */
+    flex: 1;  /*Allows the main content to grow and push the footer down */
     position: relative; /* Ensures content on main is above the overlay */
     z-index: 1;
+    margin-bottom: 60px; /* Adjust based on the height of your footer */
+    min-height: calc(100vh - 60px);
 }
 
 
