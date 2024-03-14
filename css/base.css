@@ -55,6 +55,10 @@ header nav ul li a {
     font-weight: bold;
     font-size: 20px; 
 }
+a:hover {
+    color: #5F84A2;
+}
+
 .intro-container {
     display: flex;
     align-items: center;
