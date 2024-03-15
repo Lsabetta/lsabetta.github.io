@@ -16,15 +16,18 @@
     box-sizing: border-box;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
+    .timeline.experience .timeline-container::after {
+        width: 0 !important; /* Override the inherited width */
+    }
     .experience .timeline-entry,
     .experience .left-entry,
     .experience .right-entry {
         width: 100%; /* Full width on smaller screens */
         left: 0;
-        padding: 10px 20px; /* Adjust padding for smaller screens */
+        padding: 10px 0px; /* Adjust padding for smaller screens */
     }
-
+    
     .experience .left-entry .timeline-content::before,
     .experience .right-entry .timeline-content::before {
         /* Optionally hide the horizontal connectors on smaller screens */

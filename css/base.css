@@ -6,7 +6,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh; /* Use viewport height to ensure footer can stick to the bottom */
-    margin: 0 10vmax; /* Reset default margin */
+    margin: 0 10%; /* Reset default margin */
     padding: 0;
     width: 80%;
     color: white;
@@ -109,11 +109,41 @@ a:hover {
     padding: 10px  30px; /* Adds padding on the sides for narrower text blocks */
 }
 @media screen and (max-width: 600px) {
-    h1 { font-size: 24px; }
-    h2 { font-size: 22px; }
+    #index h1 { font-size: 30px; }
+    #about h2 { font-size: 22px; }
     h3 { font-size: 20px; }
-    p, li { font-size: 16px; }
+    header nav ul li a { font-size: 16px; }
+    header nav ul li {margin: 50px 15px;}
+    header nav ul{ padding: 5px;}
     main {
-        padding: 10px; /* Reduced padding on smaller screens */
+        padding: 0px; /* Reduced padding on smaller screens */
+    }
+    body {
+        margin: 0 0%; /* Reset default margin */
+        width: 100%;
+    }
+    .intro-container {
+        flex-direction: column;
+        padding: 20px 0px;
+    }
+    
+}
+@media screen and (max-width: 800px) {
+    #index h1 { font-size: 30px; }
+    #about h2 { font-size: 22px; }
+    h3 { font-size: 20px; }
+    header nav ul li a { font-size: 16px; }
+    header nav ul li {margin: 50px 15px;}
+    header nav ul{ padding: 5px;}
+    main {
+        padding: 0px; /* Reduced padding on smaller screens */
+    }
+    body {
+        margin: 0 5%; /* Reset default margin */
+        width: 90%;
+    }
+    .intro-container {
+        flex-direction: column;
+        padding: 20px 0px;
     }
 }

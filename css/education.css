@@ -43,7 +43,7 @@
 }
 .right-entry .timeline-content {
     text-align: left;
-    padding: 50px;
+    padding: 10px;
 }
 
 .timeline-entry .timeline-content::before {
@@ -75,11 +75,11 @@ right-entry:hover .timeline-content::before {
 
 }
 .left-entry .timeline-content::before {
-    right: -10%; /* For left entries, extend line from right */
+    right: -5.75vh; /* For left entries, extend line from right */
 }
 
 .right-entry .timeline-content::before {
-    left: -10%; /* For right entries, extend line from left */
+    left: -5.75vh; /* For right entries, extend line from left */
 }
 /*.right-entry .timeline-content::before {
     left: 100%;
@@ -101,21 +101,41 @@ right-entry:hover .timeline-content::before {
 }
 
 @media screen and (max-width: 600px) {
-    .timeline-entry,
-    .left-entry,
-    .right-entry {
+    
+    .timeline-entry {
         width: 100%;
+        padding: 0px 0px;
+    }
+
+    .timeline-container::after {
+        top: 50px;
+        left: 5px;
+        transform: translateX(0%);
+    }
+    .right-entry {
+        left: 0%;
+        
+    }
+    .right-entry .timeline-content {
+        text-align: left;
+        padding: 30px;
+    }
+    
+    .left-entry .timeline-content::before,
+    .right-entry .timeline-content::before {
+        border: 2px solid #ddd; /* Border color for the circle, can use accent color */
+        width: 10px; /* Diameter of the circle */
+        height: 10px; /* Diameter of the circle */
+        border-radius: 50%; /* Makes the shape a circle */
+        top: calc(50% - 5px); /* Centers the circle vertically */
+        z-index: 2;
         left: 0;
-        padding-left: 20px;
-        padding-right: 20px;
     }
-
-    .right-entry .timeline-content::before,
-    .left-entry .timeline-content::before {
-        display: none;
+ 
+    .timeline-entry .timeline-content:hover,
+    .right-entry .timeline-content:hover  {
+        transform: translateX(0px);
+        left: 0 ;
     }
-
-    .timeline-entry .timeline-content:hover {
-        transform: none;
-    }
+    
 }
