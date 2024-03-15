@@ -23,7 +23,7 @@
 .timeline-entry {
     position: relative;
     width: 50%;
-    padding: 10px 40px;
+    padding: 10px 2.5rem;
     box-sizing: border-box;
 }
 
@@ -49,7 +49,7 @@
 .timeline-entry .timeline-content::before {
     content: '';
     position: absolute;
-    width: 13%;
+    width: 4vw;
     height: 2px;
     background-color: #ddd; /* Light accent color */
     top: 50%;
@@ -75,11 +75,11 @@ right-entry:hover .timeline-content::before {
 
 }
 .left-entry .timeline-content::before {
-    right: -5.75vh; /* For left entries, extend line from right */
+    right: -2.5rem; /* For left entries, extend line from right */
 }
 
 .right-entry .timeline-content::before {
-    left: -5.75vh; /* For right entries, extend line from left */
+    left: -2.5rem; /* For right entries, extend line from left */
 }
 /*.right-entry .timeline-content::before {
     left: 100%;
