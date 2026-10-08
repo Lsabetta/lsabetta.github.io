@@ -236,12 +236,13 @@ header nav a[aria-current="page"] {
     }
 
     header nav ul {
-        gap: 4px 16px;
+        gap: 4px 18px;
+        row-gap: 2px;
     }
-
+    
     header nav a {
         font-size: 14px;
-        padding: 7px 0;
+        padding: 6px 0;
     }
 
     .home-hero {
@@ -249,8 +250,8 @@ header nav a[aria-current="page"] {
     }
 
     .home-eyebrow {
-        font-size: 11px;
-        letter-spacing: 1.5px;
+        font-size: 10px;
+        letter-spacing: 1.3px;
     }
 
     .home-description {
