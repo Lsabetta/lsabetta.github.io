@@ -1,59 +1,136 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About - Luigi Sabetta</title>
+
+    <title>About | Luigi Sabetta</title>
+    <meta name="description" content="Learn about Luigi Sabetta, an AI/ML researcher with a Ph.D. in Physics and experience across CERN, Leonardo Labs, and quantitative research.">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="css/base.css"> <!-- Link to the external CSS -->
-    <link rel="stylesheet" href="css/footer.css"> 
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/about.css">
 </head>
+
 <body>
     <header>
-        <nav>
+        <nav aria-label="Main navigation">
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
+                <li><a href="about.html" aria-current="page">About</a></li>
                 <li><a href="experience.html">Experience</a></li>
                 <li><a href="education.html">Education</a></li>
                 <li><a href="publications.html">Publications</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-      <div id="about" class="intro-container">
-	<img src="./images/ProfilePicture.jpeg" alt="Luigi Sabetta" class="profile-pic">
-	<div class="text-content" id="profile">
-	  <h1>Luigi Sabetta</h1>
-	  <p>Particle physicist turned AI sorcerer. Former Dark Matter Hunter at CERN | Presently, navigating the realms of continual learning and machine unlearning in computer vision at Leonardolabs.</p>
-	</div>
-      </div>
-      <section id="about">
-        <h2>About Me</h2>
-        <p>Hey there! I'm just your average ex-particle-physics researcher turned AI enthusiast with a taste for adventure, both in and out of the lab. My academic journey kicked off at the University of Rome La Sapienza – yep, that's in the beautiful heart of Italy. That's where I got hooked on the mysteries of the universe and dived deep into particle physics. Oh, and I also started my Ph.D. there, which was pretty cool.</p>
-	
-	<p>The plot twist? I spent a year at CERN during my Ph.D. Imagine being in the Avengers headquarters, but for physics. It was an eye-opener, working with people from all corners of the globe. Turns out, mixing with a bunch of different minds and cultures does wonders – it's like getting a front-row seat to the world while geeking out over quarks and leptons.</p>
-	
-	<p>But here's where things took a turn – after wrapping up my Ph.D. in particle physics, I followed my gut straight into the world of AI. I landed at Leonardo Labs, diving into this whole new universe of continual learning and machine unlearning in computer vision. And guess what? Now I'm exploring how to apply these cool AI tricks to Large Language Models. It's a wild ride, but I'm loving every bit of it.</p>
-	
-	<p>When I'm not tangled up in algorithms, you can find me hitting the slopes, skiing like there's no tomorrow, or indulging in my inner powerlifting champ – though those competition days are a bit behind me. And for a dash of extra flavor, I'm all about painting minis, shuffling Magic decks, and rolling dice in Dungeons and Dragons. Because why not?</p>
-	
-	<p>Life's a blend of physics, AI, and a whole lot of fun on the side. Stick around, and let's see where this journey takes us!</p>
-	
-      </section>
+
+    <main class="about-main">
+
+        <section class="about-intro">
+            <img
+                src="images/ProfilePicture.jpeg"
+                alt="Portrait of Luigi Sabetta"
+                class="about-photo"
+            >
+
+            <div class="about-intro-text">
+                <h1>Luigi Sabetta</h1>
+                <p class="about-subtitle">
+                    AI/ML Researcher | Applied Scientist
+                </p>
+                <p>
+                    Physicist by training, AI researcher by profession.
+                    I am interested in developing machine learning
+                    methods that are effective, efficient, and
+                    grounded in rigorous experimentation.
+                </p>
+            </div>
+        </section>
+
+        <section class="about-section">
+            <h2>About Me</h2>
+
+            <p>
+                My research journey began in particle physics at
+                Sapienza University of Rome, where I earned my Ph.D.
+                while working with the ATLAS Collaboration at CERN.
+                There, I worked on large-scale data analysis,
+                statistical modeling, and machine learning
+                applications for high-energy physics.
+            </p>
+
+            <p>
+                After my Ph.D., I joined Leonardo Labs as an AI
+                Research Fellow, focusing on continual learning
+                and machine unlearning. My work involved developing
+                methods to mitigate catastrophic forgetting,
+                remove learned information from models, and
+                investigate these challenges in both computer
+                vision and large language models.
+            </p>
+
+            <p>
+                More recently, I have been working on quantitative
+                research, exploring predictive modeling with
+                transformer-based architectures and graph neural
+                networks, alongside model evaluation and
+                validation in noisy, non-stationary environments.
+            </p>
+
+            <p>
+                Across these experiences, I have remained
+                interested in the intersection of research and
+                practical applications, combining mathematical
+                reasoning, experimentation, and software
+                development to address challenging problems.
+            </p>
+        </section>
+
+        <section class="about-section">
+            <h2>Research Interests</h2>
+
+            <p>
+                My interests span continual learning, machine
+                unlearning, large language models, predictive
+                modeling, and efficient machine learning.
+                I am particularly interested in how models
+                adapt to changing information, how learned
+                knowledge can be selectively removed, and
+                how machine learning systems can be made
+                more computationally efficient and reliable.
+            </p>
+        </section>
+
+        <section class="about-section">
+            <h2>Beyond Research</h2>
+
+            <p>
+                Outside research, I enjoy skiing, strength
+                training, and creative hobbies. I previously
+                competed in powerlifting, and I also enjoy
+                painting miniatures, playing Magic: The Gathering,
+                and exploring tabletop role-playing games
+                such as Dungeons & Dragons.
+            </p>
+        </section>
 
     </main>
-    
+
     <footer>
-      <div id="footer-placeholder"></div>
-      
-      <script>
-	document.addEventListener("DOMContentLoaded", function() {
-            fetch('footer.html')
-		.then(response => response.text())
-		.then(text => document.getElementById('footer-placeholder').innerHTML = text);
-	});
-      </script>  
+        <div id="footer-placeholder"></div>
     </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            fetch("footer.html")
+                .then(response => response.text())
+                .then(html => {
+                    document.getElementById("footer-placeholder").innerHTML = html;
+                });
+        });
+    </script>
 </body>
 </html>
