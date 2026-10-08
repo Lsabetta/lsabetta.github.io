@@ -1,94 +1,180 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About - Luigi Sabetta</title>
+
+    <title>Experience | Luigi Sabetta</title>
+    <meta name="description" content="Professional experience of Luigi Sabetta in AI research, machine learning, quantitative modeling, and high-energy physics at Leonardo Labs and CERN.">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="css/base.css"> <!-- Link to the external CSS -->
+    <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/education.css">
     <link rel="stylesheet" href="css/experience.css">
-    
 </head>
+
 <body>
     <header>
-        <nav>
+        <nav aria-label="Main navigation">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="experience.html">Experience</a></li>
+                <li><a href="experience.html" aria-current="page">Experience</a></li>
                 <li><a href="education.html">Education</a></li>
                 <li><a href="publications.html">Publications</a></li>
             </ul>
         </nav>
     </header>
-    <main>
 
-        <section class="timeline experience">
-            <div class="timeline-container">
-        
-                <!-- Experience Entry 1: Quantitative Researcher -->
-                <div class="timeline-entry left-entry">
-                    <div class="timeline-content">
-                        <h3>Quantitative Researcher</h3>
-                        <p>Confidential AI/Quant Research Project - 11/2024 – Present</p>
-                        <p>Remote (Global Team)</p>
-                        <ul>
-                            <li>Developed predictive modeling pipelines using transformer-based architectures and graph neural networks for financial and market data.</li>
-                            <li>Researched LLM-assisted signal extraction and model evaluation strategies for data-driven decision systems.</li>
-                            <li>Built experimental frameworks for backtesting, feature analysis, and model validation in high-noise, non-stationary environments.</li>
-                        </ul>
+    <main class="experience-main">
+        <section class="experience-section">
+            <h1>Professional Experience</h1>
+
+            <div class="experience-timeline">
+
+                <!-- Quantitative Research -->
+                <article class="experience-item">
+                    <div class="experience-period">
+                        Nov 2024 – Present
                     </div>
-                </div>
-        
-                <!-- Experience Entry 2: Leonardo Labs -->
-                <div class="timeline-entry right-entry">
-                    <div class="timeline-content">
-                        <h3>AI Research Fellow</h3>
-                        <p>Leonardo Labs - 10/2022 – 10/2024</p>
-                        <p>Rome, Italy</p>
-                        <ul>
-                            <li>Developed machine unlearning methods for computer vision and large language models, targeting efficient removal of learned information while preserving model performance.</li>
-                            <li>Led research in continual learning for computer vision, developing algorithms to address catastrophic forgetting and enable lifelong learning.</li>
-                            <li>Published research on continual learning and machine unlearning, including papers at major international AI conferences.</li>
-                        </ul>
+
+                    <h2>Quantitative Researcher</h2>
+                    <p class="experience-organization">
+                        Confidential AI/Quant Research Project
+                    </p>
+                    <p class="experience-location">
+                        Remote · Global Team
+                    </p>
+
+                    <ul>
+                        <li>
+                            Developed predictive modeling pipelines
+                            using transformer-based architectures and
+                            graph neural networks for financial and
+                            market data.
+                        </li>
+                        <li>
+                            Researched LLM-assisted signal extraction
+                            and model evaluation strategies for
+                            data-driven decision systems.
+                        </li>
+                        <li>
+                            Built experimental frameworks for
+                            backtesting, feature analysis, and
+                            model validation in high-noise,
+                            non-stationary environments.
+                        </li>
+                    </ul>
+                </article>
+
+                <!-- Leonardo Labs -->
+                <article class="experience-item">
+                    <div class="experience-period">
+                        Oct 2022 – Oct 2024
                     </div>
-                </div>
-        
-                <!-- Experience Entry 3: CERN -->
-                <div class="timeline-entry left-entry">
-                    <div class="timeline-content">
-                        <h3>Ph.D. Researcher/Data Scientist</h3>
-                        <p>CERN - 11/2018 – 06/2022</p>
-                        <p>Rome, Italy and Geneva, Switzerland</p>
-                        <ul>
-                            <li>Co-managed two petabyte-scale physics analyses, including data processing, statistical modeling, and systematic uncertainty studies.</li>
-                            <li>Developed analysis software and machine learning algorithms in Python and C++ for large-scale high-energy physics datasets.</li>
-                            <li>Implemented Convolutional Neural Networks on FPGA with 400 ns latencies, optimizing data processing.</li>
-                            <li>Achieved a 1000x compression factor for machine learning algorithms, enhancing computational efficiency.</li>
-                            <li>Co-authored nearly 200 publications within the ATLAS Collaboration.</li>
-                            <li>Mentored and guided the professional development of three undergraduate and Ph.D. students.</li>
-                            <li>Served as an official CERN visitor guide, communicating complex scientific concepts to the public.</li>
-                        </ul>
+
+                    <h2>AI Research Fellow</h2>
+                    <p class="experience-organization">
+                        Leonardo Labs
+                    </p>
+                    <p class="experience-location">
+                        Rome, Italy
+                    </p>
+
+                    <ul>
+                        <li>
+                            Developed machine unlearning methods
+                            for computer vision and large language
+                            models, targeting efficient removal
+                            of learned information while preserving
+                            model performance.
+                        </li>
+                        <li>
+                            Led research in continual learning
+                            for computer vision, developing
+                            algorithms to address catastrophic
+                            forgetting and enable lifelong learning.
+                        </li>
+                        <li>
+                            Published research on continual learning
+                            and machine unlearning, including work
+                            presented at major international
+                            AI conferences.
+                        </li>
+                    </ul>
+                </article>
+
+                <!-- CERN -->
+                <article class="experience-item">
+                    <div class="experience-period">
+                        Nov 2018 – Jun 2022
                     </div>
-                </div>
-        
+
+                    <h2>Ph.D. Researcher / Data Scientist</h2>
+                    <p class="experience-organization">
+                        CERN · ATLAS Collaboration
+                    </p>
+                    <p class="experience-location">
+                        Geneva, Switzerland
+                    </p>
+
+                    <ul>
+                        <li>
+                            Co-managed two petabyte-scale physics
+                            analyses, including data processing,
+                            statistical modeling, systematic
+                            uncertainty studies, and result
+                            interpretation.
+                        </li>
+                        <li>
+                            Developed analysis software and
+                            machine learning algorithms in Python
+                            and C++ for large-scale high-energy
+                            physics datasets.
+                        </li>
+                        <li>
+                            Implemented Convolutional Neural
+                            Networks on FPGA with 400 ns
+                            inference latencies.
+                        </li>
+                        <li>
+                            Achieved a 1000× compression factor
+                            for machine learning algorithms,
+                            improving computational efficiency.
+                        </li>
+                        <li>
+                            Co-authored nearly 200 publications
+                            within the ATLAS Collaboration.
+                        </li>
+                        <li>
+                            Mentored three undergraduate and
+                            Ph.D. students.
+                        </li>
+                        <li>
+                            Served as an official CERN visitor
+                            guide, communicating scientific
+                            concepts to the public.
+                        </li>
+                    </ul>
+                </article>
+
             </div>
         </section>
-        
-
     </main>
+
     <footer>
-      <div id="footer-placeholder"></div>
-      
-      <script>
-	document.addEventListener("DOMContentLoaded", function() {
-            fetch('footer.html')
-		.then(response => response.text())
-		.then(text => document.getElementById('footer-placeholder').innerHTML = text);
-	});
-      </script>  
+        <div id="footer-placeholder"></div>
     </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            fetch("footer.html")
+                .then(response => response.text())
+                .then(html => {
+                    document.getElementById("footer-placeholder").innerHTML = html;
+                });
+        });
+    </script>
 </body>
 </html>

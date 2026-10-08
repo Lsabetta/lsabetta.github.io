@@ -1,28 +1,72 @@
-footer {
-    position: fixed; /* Change from 'relative' to 'fixed' */
-    left: 0;
-    bottom: 0;
+
+/* ========================================
+   FOOTER
+======================================== */
+
+body > footer {
     width: 100%;
-    height: 60px; /* Match this to the actual height of your footer */
-    z-index: 100; /* Ensure it's above other content */
-    background-color: rgba(0, 0, 0, 0.5); /* Add a semi-transparent background color as needed */
-    color: white; /* Set text color as needed */
+    flex-shrink: 0;
+    padding: 18px 20px;
+
+    background-color: rgba(0, 0, 0, 0.35);
+    border-top: 1px solid rgba(168, 194, 219, 0.12);
+
+    color: white;
 }
 
 .contact {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 40px;
-    padding: 10px 0; /* Adjust padding as needed */
+    flex-wrap: wrap;
+    gap: 36px;
 }
 
 .contact a {
-    color: #ffffff;
-    font-size: 33px; /* Adjust font size as needed */
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 36px;
+    height: 36px;
+
+    color: #f0f4f8;
+    font-size: 28px;
     text-decoration: none;
+
+    transition: color 0.2s ease,
+                transform 0.2s ease;
 }
 
 .contact a:hover {
-    color: #5F84A2;
+    color: #a8c2db;
+    transform: translateY(-2px);
+}
+
+.contact a:focus-visible {
+    outline: 2px solid #a8c2db;
+    outline-offset: 5px;
+    border-radius: 4px;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 480px) {
+    body > footer {
+        padding: 16px 10px;
+    }
+
+    .contact {
+        gap: 28px;
+    }
+
+    .contact a {
+        font-size: 25px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .contact a:hover {
+        transform: none;
+    }
 }
