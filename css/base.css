@@ -147,3 +147,124 @@ a:hover {
         padding: 20px 0px;
     }
 }
+
+/* ========================================
+   HOMEPAGE
+======================================== */
+
+.home-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 160px);
+    margin-bottom: 60px;
+}
+
+.home-hero {
+    width: 100%;
+    max-width: 820px;
+    padding: 60px 24px;
+    text-align: center;
+}
+
+.home-eyebrow {
+    color: #8aadc9;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-bottom: 18px;
+}
+
+.home-hero h1 {
+    font-size: clamp(42px, 6vw, 72px);
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin: 0 0 14px;
+    text-transform: none;
+}
+
+.home-hero h2 {
+    font-size: clamp(19px, 2.5vw, 27px);
+    font-weight: 400;
+    color: #a8c2db;
+    margin: 0 0 30px;
+}
+
+.home-description {
+    max-width: 700px;
+    margin: 0 auto 32px;
+    color: #e0e6ed;
+    font-size: 18px;
+    line-height: 1.75;
+}
+
+.home-specializations {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 38px;
+}
+
+.home-specializations span {
+    padding: 8px 14px;
+    border: 1px solid rgba(168, 194, 219, 0.35);
+    border-radius: 24px;
+    color: #c6d8e9;
+    font-size: 13px;
+    background: rgba(20, 35, 51, 0.55);
+}
+
+
+.home-button.primary {
+    background-color: #457baa;
+    color: white;
+    border: 1px solid #457baa;
+}
+
+.home-button.primary:hover {
+    background-color: #5f94c3;
+    color: white;
+}
+
+.home-button.secondary {
+    color: white;
+    background-color: rgba(15, 25, 35, 0.45);
+    border: 1px solid #60758b;
+}
+
+.home-button.secondary:hover {
+    border-color: #a8c2db;
+    background-color: rgba(45, 70, 95, 0.55);
+    color: white;
+}
+
+/* Mobile homepage */
+
+@media screen and (max-width: 800px) {
+    .home-main {
+        min-height: calc(100vh - 140px);
+    }
+
+    .home-hero {
+        padding: 50px 15px;
+    }
+
+    .home-description {
+        font-size: 16px;
+        line-height: 1.65;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .home-hero {
+        padding: 40px 10px;
+    }
+
+    .home-eyebrow {
+        font-size: 11px;
+        letter-spacing: 1.5px;
+    }
+
+
+}
